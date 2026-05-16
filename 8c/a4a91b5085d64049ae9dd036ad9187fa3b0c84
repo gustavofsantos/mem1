@@ -1,0 +1,37 @@
+src/core/schema.ts
+  s_68ea2b3a8fb7d9::t_b5a7e4c0e87152 13-17,20
+ROADMAP.md
+  s_68ea2b3a8fb7d9::t_0de60552f85916 13
+  s_68ea2b3a8fb7d9::t_a124fe7d4a16c0 29-30,33-37
+src/core/operations/list-tags.ts
+  s_68ea2b3a8fb7d9::t_86fb4b5c29a135 1-6
+src/core/tools.ts
+  s_68ea2b3a8fb7d9::t_1f00d50a1f2b3e 16-17
+  s_68ea2b3a8fb7d9::t_f6e5e855a19398 133-152
+src/core/operations/create-document.ts
+  s_68ea2b3a8fb7d9::t_a175038b5fcffa 27-29
+src/core/operations/index.ts
+  s_68ea2b3a8fb7d9::t_65d44f6a8d7e37 12-13
+migrations/002_tags_table.sql
+  s_68ea2b3a8fb7d9::t_cace2e2724388c 1-17
+src/core/operations/add-tag.ts
+  s_68ea2b3a8fb7d9::t_d1438b530cead7 1-22
+tests/e2e/tags.test.ts
+  s_68ea2b3a8fb7d9::t_c7bf735ef01cfc 1-72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "8ca4a91b5085d64049ae9dd036ad9187fa3b0c84",
+  "prompts": {},
+  "sessions": {
+    "s_68ea2b3a8fb7d9": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "52e720a6-ca96-4c96-a66c-a2260945e845",
+        "model": "gemini-3-flash-preview"
+      },
+      "human_author": "Gustavo Santos <gustavogustav54@gmail.com>"
+    }
+  }
+}
