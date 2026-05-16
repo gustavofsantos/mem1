@@ -1,0 +1,27 @@
+{
+  "name": "mem1",
+  "version": "0.1.0",
+  "description": "Personal memory MCP server — local SQLite or remote Turso, stdio or HTTP transport",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "vitest run tests/e2e",
+    "server:stdio": "node --import tsx/esm src/transports/stdio.ts",
+    "server:http": "node --import tsx/esm src/transports/http.ts",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "hono": "^4.6.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.1.0"
+  }
+}
