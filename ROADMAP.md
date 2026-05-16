@@ -8,25 +8,12 @@
 - **HTTP transport** — bearer token auth; self-hostable on any machine
 - **E2E test suite** — 35 tests, each spawning a real stdio server against a temp SQLite DB
 - **Typecheck** — strict TypeScript, clean
+- **Cloudflare Workers transport** — OAuth 2.0 + PKCE, Turso HTTP API
+- **MANUAL.md** — step-by-step deploy guide for all modes
 
 ---
 
 ## Up next
-
-### Cloudflare Workers transport
-
-Implement `src/transports/worker.ts` using `@cloudflare/workers-oauth-provider` for OAuth 2.0 + PKCE. `src/auth/oauth.ts` is the pluggable identity check — the one function a self-hoster replaces. Connect to Turso via the `@libsql/client` HTTP API (no native modules in Workers). Bind `TURSO_URL` and `TURSO_AUTH_TOKEN` as Wrangler secrets.
-
-E2E tests for this transport should run against `wrangler dev` + a local SQLite — not real Turso — so they stay reproducible.
-
-### MANUAL.md
-
-Step-by-step deploy guide covering all three modes:
-- **Local stdio** — install, configure Claude Code, first `create_fact`
-- **Self-hosted HTTP** — run the HTTP server, generate a bearer token, configure Claude Code
-- **Cloudflare Workers** — `wrangler deploy`, set secrets, configure OAuth identity, configure claude.ai
-
-The manual should mirror the E2E test setup exactly. If the tests pass, the manual is correct.
 
 ### Migration script
 
@@ -35,6 +22,10 @@ One-time import from `~/engineering/` into the database. Parses Markdown files, 
 ---
 
 ## Later
+
+### Refactor defining Domain Objects
+
+### Introduce Effect to manage effectful service layer
 
 ### FTS5 full-text search
 

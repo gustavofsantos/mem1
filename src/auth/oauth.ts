@@ -14,8 +14,8 @@ export type IdentityProfile = {
 // Examples:
 //   return profile.email === "you@example.com"
 //   return profile.login === "your-github-handle"
-export function isAuthorizedUser(profile: IdentityProfile): boolean {
-  const allowedEmail = process.env["MEM1_ALLOWED_EMAIL"]
+export function isAuthorizedUser(profile: IdentityProfile, env: Record<string, any>): boolean {
+  const allowedEmail = env["MEM1_ALLOWED_EMAIL"]
   if (allowedEmail && profile.email) return profile.email === allowedEmail
   return false
 }
