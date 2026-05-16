@@ -1,0 +1,123 @@
+package.json
+  s_3d906d49dcd42e::t_36dc8447261e49 1-27
+src/core/operations/create-issue.ts
+  s_3d906d49dcd42e::t_cc016b4c92ebee 1-9
+tests/e2e/update-document.test.ts
+  s_3d906d49dcd42e::t_4a7b9a109e2c34 1-2,4-18,20-23,25-33,35-38,40-48,50-55,57-64,66-69,71-73
+  s_f868c4239c96ef::t_5e46939ddd2892 3,19,24,34,39,49,56,65,70
+src/core/operations/index.ts
+  s_3d906d49dcd42e::t_6aa0355e781b1c 1-11
+src/core/operations/create-document.ts
+  s_3d906d49dcd42e::t_8b838ad628df19 1-33
+src/core/types.ts
+  s_3d906d49dcd42e::t_3b25700c548543 1-28
+src/core/db.ts
+  s_3d906d49dcd42e::t_48448dbd4841fd 1-6,8-12
+  s_3d906d49dcd42e::t_43a9f100f8558f 7
+src/transports/stdio.ts
+  s_f868c4239c96ef::t_146fe4e2a6031d 20
+  s_f868c4239c96ef::t_daf7baa21c9a15 21-22
+  s_3d906d49dcd42e::t_13ac6adf880c2d 1-19
+  s_f868c4239c96ef::t_9e7033c5cd16ef 23-25
+tests/e2e/search.test.ts
+  s_3d906d49dcd42e::t_42b5c3d8257a0e 1-2,4-18,20-22,24-27,29-34,36-39,41-44,47,49-53,55-58,60-63,65-69,71-74,76,78-82,84-86
+  s_f868c4239c96ef::t_5e46939ddd2892 3,19,23,28,35,40,45-46,48,54,59,64,70,75,77,83
+tests/e2e/helpers.ts
+  s_3d906d49dcd42e::t_d5ff2ea19b02f7 1-8,11-20,23-42
+  s_3d906d49dcd42e::t_6be4a19616e5d2 9-10
+  s_f868c4239c96ef::t_7935c198f9a6c7 21-22
+  s_f868c4239c96ef::t_2ed37f20da2e9d 43-50
+tests/e2e/create-fact.test.ts
+  s_3d906d49dcd42e::t_3466d26151cdc5 1-2,4-18,20-35,37-46,48-51,53-60,62-65,67-69
+  s_f868c4239c96ef::t_5e46939ddd2892 3,19,36,47,52,61,66
+tests/e2e/document-types.test.ts
+  s_3d906d49dcd42e::t_a20519e7c0025b 1-2,4-21,23-33,35-46,48-55
+  s_f868c4239c96ef::t_5e46939ddd2892 3,22,34,47
+src/core/operations/archive-document.ts
+  s_3d906d49dcd42e::t_cc32e0ceb9b138 1-12
+tests/e2e/list-documents.test.ts
+  s_3d906d49dcd42e::t_077b3575ba0712 1-2,4-18,21,23-26,32-36,39,41-45,47-50,52,54-58,60-62
+  s_f868c4239c96ef::t_5e46939ddd2892 3,19-20,22,27-31,37-38,40,46,51,53,59
+tsconfig.json
+  s_3d906d49dcd42e::t_873dd79dde504b 1-9,12-17
+  s_3d906d49dcd42e::t_9f1c80510274c4 10-11
+src/core/operations/link.ts
+  s_3d906d49dcd42e::t_fa397564f1ecc2 1-18
+tests/e2e/debug.test.ts
+  s_3d906d49dcd42e::t_6b0733ac453302 1-21,24-47
+  s_f868c4239c96ef::t_3c7db4ecb17067 22-23
+src/auth/oauth.ts
+  s_3d906d49dcd42e::t_c3453dec6c1b40 1-21
+src/core/operations/create-spike.ts
+  s_3d906d49dcd42e::t_bf7ca6dbd35ed5 1-9
+src/transports/worker.ts
+  s_3d906d49dcd42e::t_f7e1e5c5b90674 1-15
+vitest.config.ts
+  s_3d906d49dcd42e::t_e5492949571cd8 1-10
+.gitignore
+  s_3d906d49dcd42e::t_19d9d1a97c2dbd 1-8
+migrations/001_initial.sql
+  s_3d906d49dcd42e::t_74109ea0b277c2 1-25
+src/core/operations/create-term.ts
+  s_3d906d49dcd42e::t_f5dc2cb61b67c1 1-9
+src/core/operations/get-links.ts
+  s_3d906d49dcd42e::t_c66c60f0fd505d 1-32
+src/core/tools.ts
+  s_3d906d49dcd42e::t_87f02bbf24e5e4 1-131
+tests/e2e/get-document.test.ts
+  s_3d906d49dcd42e::t_76f808535591c9 1-2,4-18,20-24,26-37,39-41
+  s_f868c4239c96ef::t_5e46939ddd2892 3,19,25,38
+src/auth/bearer.ts
+  s_3d906d49dcd42e::t_20adccf3c26148 1-5
+src/transports/http.ts
+  s_3d906d49dcd42e::t_d89003a1daebc1 27
+  s_3d906d49dcd42e::t_5907b58ef5f707 1-26,28-41
+src/core/operations/update-document.ts
+  s_3d906d49dcd42e::t_b21b2a01753c7d 1-32
+src/core/operations/search.ts
+  s_3d906d49dcd42e::t_b56dbc4ba8a1de 1
+  s_3d906d49dcd42e::t_8eddd05674709f 2-12,14-56
+  s_3d906d49dcd42e::t_3ca4fdd807c67f 13
+src/core/operations/list-documents.ts
+  s_3d906d49dcd42e::t_063e71e1492636 1
+  s_3d906d49dcd42e::t_530338464e6fdb 2-8,10-57
+  s_3d906d49dcd42e::t_22d297ab2ca824 9
+src/core/schema.ts
+  s_3d906d49dcd42e::t_829cb909b87dbd 1-28
+src/core/operations/create-fact.ts
+  s_3d906d49dcd42e::t_7bc0755ee96138 1-9
+tests/e2e/archive-document.test.ts
+  s_3d906d49dcd42e::t_c41db69f59655d 1-2,4-18,20-23,25,27-31,33-36,38,40-44,46-48
+  s_f868c4239c96ef::t_5e46939ddd2892 3,19,24,26,32,37,39,45
+tests/e2e/link.test.ts
+  s_3d906d49dcd42e::t_b32ea8ff76acaf 1-2,4-17,19-22,24-29,31-47,49-61,63,65-75,77,79-91,94,96-100,102-104
+  s_f868c4239c96ef::t_5e46939ddd2892 3,18,23,30,48,62,64,76,78,92-93,95,101
+src/core/operations/get-document.ts
+  s_3d906d49dcd42e::t_1d9add5f588df9 1-4,6,8,12-26
+  s_3d906d49dcd42e::t_fc6437277d3957 5,9-11
+  s_f868c4239c96ef::t_87c7aa4cb5788c 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "44a9e705dfa834b981465f93bce5e93f5cee5b5f",
+  "prompts": {},
+  "sessions": {
+    "s_3d906d49dcd42e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "acb20033-a904-4332-adde-ab237334835b",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Gustavo Santos <gustavogustav54@gmail.com>"
+    },
+    "s_f868c4239c96ef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e3209-7ac2-72d1-995c-2f947ed2e3da",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Gustavo Santos <gustavogustav54@gmail.com>"
+    }
+  }
+}
