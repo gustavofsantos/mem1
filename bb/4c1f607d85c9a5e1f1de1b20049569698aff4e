@@ -1,0 +1,19 @@
+ROADMAP.md
+  s_3d906d49dcd42e::t_fd9cad37a1141a 1-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "bb4c1f607d85c9a5e1f1de1b20049569698aff4e",
+  "prompts": {},
+  "sessions": {
+    "s_3d906d49dcd42e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "acb20033-a904-4332-adde-ab237334835b",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Gustavo Santos <gustavogustav54@gmail.com>"
+    }
+  }
+}
