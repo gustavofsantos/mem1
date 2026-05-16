@@ -10,9 +10,14 @@ CREATE TABLE IF NOT EXISTS documents (
   updated_at TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS tags (
+  name TEXT PRIMARY KEY,
+  created_at TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS document_tags (
   document_id TEXT NOT NULL REFERENCES documents(id) ON DELETE CASCADE,
-  tag TEXT NOT NULL,
+  tag TEXT NOT NULL REFERENCES tags(name) ON DELETE CASCADE,
   PRIMARY KEY (document_id, tag)
 );
 

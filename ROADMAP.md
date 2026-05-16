@@ -10,6 +10,7 @@
 - **Typecheck** — strict TypeScript, clean
 - **Cloudflare Workers transport** — OAuth 2.0 + PKCE, Turso HTTP API
 - **MANUAL.md** — step-by-step deploy guide for all modes
+- **Tag management** — dedicated `tags` table; many-to-many relationship; `list_tags` and `add_tag` tools
 
 ---
 
@@ -25,7 +26,15 @@ One-time import from `~/engineering/` into the database. Parses Markdown files, 
 
 ### Refactor defining Domain Objects
 
+Move from raw database types and generic `Record<string, unknown>` to strongly-typed Domain Entities. Each document type (`fact`, `spike`, `term`, `issue`) should have a dedicated schema or class with specific validation rules and transformation logic. This ensures domain invariants are enforced consistently and simplifies the implementation of tool handlers by providing a clear boundary between the transport, domain, and storage layers.
+
 ### Introduce Effect to manage effectful service layer
+
+Adopt the [Effect](https://effect.website/) library to handle core service logic and side effects. This transition will replace manual `try/catch` blocks and direct dependency passing with a functional, type-safe system for managing:
+- **Error Handling**: Use the `Effect` type to track errors in the type system, ensuring all failure paths are accounted for.
+- **Dependency Management**: Use `Layer` and `Tag` to manage service dependencies like the database client, improving testability and modularity.
+- **Resiliency**: Leverage built-in retry policies, timeouts, and circuit breakers to handle transient database or network failures gracefully.
+- **Observability**: Benefit from structured logging and built-in tracing to monitor vault operations in production.
 
 ### FTS5 full-text search
 

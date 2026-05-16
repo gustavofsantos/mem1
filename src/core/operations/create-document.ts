@@ -24,6 +24,10 @@ export async function createDocument(
       args: [id, type, args.title, args.body, now, now],
     },
     ...tags.map((tag) => ({
+      sql: `INSERT OR IGNORE INTO tags (name, created_at) VALUES (?, ?)`,
+      args: [tag, now],
+    })),
+    ...tags.map((tag) => ({
       sql: `INSERT INTO document_tags (document_id, tag) VALUES (?, ?)`,
       args: [id, tag],
     })),

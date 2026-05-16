@@ -13,6 +13,8 @@ import {
   listDocuments,
   search,
   updateDocument,
+  listTags,
+  addTag,
 } from "./operations/index.ts"
 
 const text = (value: unknown) => ({
@@ -127,5 +129,25 @@ export function registerTools(server: McpServer, db: Client): void {
       archived: z.boolean().optional(),
     },
     async (args) => text(await listDocuments(db, args)),
+  )
+
+  server.tool(
+    "list_tags",
+    "List all unique tags in the vault, ordered alphabetically.",
+    {},
+    async () => text(await listTags(db)),
+  )
+
+  server.tool(
+    "add_tag",
+    "Link a document to a tag. Creates the tag if it does not exist.",
+    {
+      documentId: z.string(),
+      tag: z.string().min(1),
+    },
+    async (args) => {
+      await addTag(db, args)
+      return text({ success: true })
+    },
   )
 }
